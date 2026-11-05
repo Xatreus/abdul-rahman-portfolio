@@ -28,13 +28,24 @@ Or use the VS Code Live Server extension.
 
 This is a static site. It can be deployed to GitHub Pages, Netlify or Vercel.
 
-### GitHub Pages
+### GitHub Pages (this repository)
 
-1. Create a repository, for example `abdul-rahman-portfolio`.
-2. Upload `index.html`, `styles.css` and `script.js` to its root.
-3. Open **Settings → Pages**.
-4. Select **Deploy from a branch**, choose `main` and `/root`.
-5. Save and wait for the deployment URL.
+The portfolio is hosted from the repository root using GitHub Pages.
+
+1. Open **Settings → Pages**.
+2. Under **Build and deployment**, select **Deploy from a branch**.
+3. Select the `master` branch and the `/(root)` folder.
+4. Save. GitHub Pages publishes the site at:
+
+   <https://xatreus.github.io/abdul-rahman-portfolio/>
+
+5. Future commits pushed to `master` are published automatically. Allow a few minutes for a deployment to complete.
+
+Keep the custom domain field empty unless you own a domain and intend to configure it.
+
+### Alternative: GitHub Actions deployment
+
+A workflow is also included at `.github/workflows/deploy-pages.yml`. If you choose to use that workflow instead of branch-based publishing, change **Settings → Pages → Build and deployment → Source** to **GitHub Actions**. Do not configure both deployment methods as competing sources.
 
 ## Customize
 
